@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="NewRegisterApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Xp-p4-qxa">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hd9-eg-020">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0QC-VP-ifp">
+                                                <rect key="frame" x="21" y="0.0" width="372" height="810"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W22-Un-mql">
+                                                        <rect key="frame" x="0.0" y="0.0" width="372" height="63"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter First Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MBj-IF-a6V">
+                                                        <rect key="frame" x="0.0" y="83" width="372" height="63"/>
+                                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <action selector="endEditing:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="y2L-y1-uLG"/>
+                                                            <action selector="endOfEdit:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="yTP-ot-gh7"/>
+                                                            <action selector="endOfEditTextField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ivT-QG-B8L"/>
+                                                            <action selector="enterPressed:" destination="BYZ-38-t0r" eventType="touchDragEnter" id="1F0-33-69e"/>
+                                                            <action selector="pressedEnter:" destination="BYZ-38-t0r" eventType="touchDragEnter" id="t3n-oi-b9V"/>
+                                                            <outlet property="delegate" destination="BYZ-38-t0r" id="NMT-DU-FGx"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Last  Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vsb-xZ-vcT">
+                                                        <rect key="frame" x="0.0" y="166" width="372" height="63"/>
+                                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="BYZ-38-t0r" id="j56-xp-PhJ"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter EmailId" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JrH-wA-a5X">
+                                                        <rect key="frame" x="0.0" y="249" width="372" height="63"/>
+                                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="BYZ-38-t0r" id="8MI-zm-M5n"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Mobile Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IIx-op-Og5">
+                                                        <rect key="frame" x="0.0" y="332" width="372" height="63"/>
+                                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="BYZ-38-t0r" id="39t-aZ-xOp"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Date Of Birth" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tIY-EJ-kZD">
+                                                        <rect key="frame" x="0.0" y="415" width="372" height="63"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="zdP-8o-Su0">
+                                                        <rect key="frame" x="0.0" y="498" width="372" height="63"/>
+                                                    </datePicker>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J5M-0u-03D">
+                                                        <rect key="frame" x="0.0" y="581" width="372" height="63"/>
+                                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="BYZ-38-t0r" id="nDy-Uz-hBc"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Re - Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="22d-R0-TBb">
+                                                        <rect key="frame" x="0.0" y="664" width="372" height="63"/>
+                                                        <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                                        <connections>
+                                                            <outlet property="delegate" destination="BYZ-38-t0r" id="ZPH-qq-bWL"/>
+                                                        </connections>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRp-7e-QSg">
+                                                        <rect key="frame" x="0.0" y="747" width="372" height="63"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                        <state key="normal" title="Sign Up"/>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="0QC-VP-ifp" secondAttribute="bottom" constant="8" id="0u0-BB-KZX"/>
+                                            <constraint firstItem="0QC-VP-ifp" firstAttribute="top" secondItem="hd9-eg-020" secondAttribute="top" id="2fP-eU-6JZ"/>
+                                            <constraint firstAttribute="trailing" secondItem="0QC-VP-ifp" secondAttribute="trailing" constant="21" id="WDd-rF-8LF"/>
+                                            <constraint firstItem="0QC-VP-ifp" firstAttribute="leading" secondItem="hd9-eg-020" secondAttribute="leading" constant="21" id="n1Q-Qp-AbH"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.72431107500000003" green="0.83058647259999996" blue="0.8865582192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="hd9-eg-020" firstAttribute="top" secondItem="1Xp-p4-qxa" secondAttribute="top" id="B6N-09-LV1"/>
+                                    <constraint firstAttribute="bottom" secondItem="hd9-eg-020" secondAttribute="bottom" id="FyS-Qr-KxL"/>
+                                    <constraint firstItem="hd9-eg-020" firstAttribute="leading" secondItem="1Xp-p4-qxa" secondAttribute="leading" id="PGo-nj-d1o"/>
+                                    <constraint firstAttribute="trailing" secondItem="hd9-eg-020" secondAttribute="trailing" id="Xpg-qZ-teQ"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.72431107500000003" green="0.83058647259999996" blue="0.8865582192" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="1Xp-p4-qxa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="4jC-2k-MGx"/>
+                            <constraint firstItem="1Xp-p4-qxa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JfW-E6-BUJ"/>
+                            <constraint firstItem="hd9-eg-020" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Tb6-Ja-KeA"/>
+                            <constraint firstItem="1Xp-p4-qxa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="UUi-4V-EgZ"/>
+                            <constraint firstItem="1Xp-p4-qxa" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="igR-Xv-iug"/>
+                            <constraint firstItem="hd9-eg-020" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.912946" id="m5L-Dw-dq4"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="conformpassword" destination="22d-R0-TBb" id="mVN-Sc-2as"/>
+                        <outlet property="dateofbirth" destination="zdP-8o-Su0" id="bFD-5c-qZi"/>
+                        <outlet property="emailid" destination="JrH-wA-a5X" id="El6-j7-waV"/>
+                        <outlet property="firstname" destination="MBj-IF-a6V" id="DPB-V8-Sun"/>
+                        <outlet property="lastname" destination="Vsb-xZ-vcT" id="UnL-eI-xnQ"/>
+                        <outlet property="mobilenumber" destination="IIx-op-Og5" id="Zoc-j3-PlQ"/>
+                        <outlet property="password" destination="J5M-0u-03D" id="GPf-re-Mua"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-533" y="13"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SPA_API" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Gl1-Ra-Eyh">
+                                <rect key="frame" x="142.5" y="100" width="129" height="48"/>
+                                <color key="backgroundColor" red="0.086154364049434662" green="0.32425194978713989" blue="0.37696695327758789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="128" id="ylc-TZ-QGC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Get Users">
+                                    <color key="titleColor" red="0.92549639939999995" green="0.92547911410000006" blue="0.92549085620000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="fetchUserButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tc2-y5-xnU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.90634036064147949" green="0.90217745304107666" blue="0.88018590211868286" alpha="0.999664306640625" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Gl1-Ra-Eyh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="56" id="TGy-ve-fXT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Gl1-Ra-Eyh" secondAttribute="trailing" id="XTX-Fh-tjN"/>
+                            <constraint firstItem="Gl1-Ra-Eyh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jLZ-KK-w8E"/>
+                            <constraint firstItem="Gl1-Ra-Eyh" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="zgx-qL-DEL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="fetchUserButton" destination="Gl1-Ra-Eyh" id="iaN-eD-qpo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="88"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" reuseIdentifier="reusableCollectionViewCell" id="gTV-IL-0wX" customClass="MyCollectionViewCell" customModule="CollectionView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="161" height="96"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="161" height="96"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PcY-RX-CKU">
+                        <rect key="frame" x="0.0" y="0.0" width="161" height="96"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VeR-dw-2bj">
+                                <rect key="frame" x="0.0" y="0.0" width="161" height="96"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name" textAlignment="natural" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="none" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Apt-eF-Q6s">
+                                        <rect key="frame" x="0.0" y="0.0" width="161" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="age" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXb-6Y-eDy">
+                                        <rect key="frame" x="0.0" y="32" width="161" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="gender" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oXb-TP-0yT">
+                                        <rect key="frame" x="0.0" y="64" width="161" height="32"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.72549019609999998" green="0.83137254900000002" blue="0.8862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="VeR-dw-2bj" firstAttribute="leading" secondItem="PcY-RX-CKU" secondAttribute="leading" id="fGF-jp-xN1"/>
+                            <constraint firstAttribute="bottom" secondItem="VeR-dw-2bj" secondAttribute="bottom" id="kq3-D7-oYq"/>
+                            <constraint firstAttribute="trailing" secondItem="VeR-dw-2bj" secondAttribute="trailing" id="kxx-Rh-LQy"/>
+                            <constraint firstItem="VeR-dw-2bj" firstAttribute="top" secondItem="PcY-RX-CKU" secondAttribute="top" id="t4d-IU-QE6"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="PcY-RX-CKU" secondAttribute="bottom" id="7Wo-4j-3BN"/>
+                <constraint firstItem="PcY-RX-CKU" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Vxu-RT-YzT"/>
+                <constraint firstItem="PcY-RX-CKU" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rDB-ab-zAb"/>
+                <constraint firstAttribute="trailing" secondItem="PcY-RX-CKU" secondAttribute="trailing" id="swC-Wa-e0h"/>
+            </constraints>
+            <size key="customSize" width="161" height="96"/>
+            <connections>
+                <outlet property="ageLabel" destination="fXb-6Y-eDy" id="Z5Z-cS-URx"/>
+                <outlet property="genderLabel" destination="oXb-TP-0yT" id="Uck-Tb-w4G"/>
+                <outlet property="nameLabel" destination="Apt-eF-Q6s" id="1yP-Fg-2Eg"/>
+                <outlet property="stackView" destination="VeR-dw-2bj" id="ql3-iI-EBp"/>
+                <outlet property="userView" destination="PcY-RX-CKU" id="YvZ-M8-3Kc"/>
+            </connections>
+            <point key="canvasLocation" x="199.27536231884059" y="95.089285714285708"/>
+        </collectionViewCell>
+    </objects>
+</document>
